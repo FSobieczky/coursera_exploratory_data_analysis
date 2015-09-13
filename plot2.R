@@ -12,7 +12,7 @@ W<-append(W1, W2, after = length(W1)) # put them together in one vector
 png("plot2.png");		 # Generate the png-file.
 
 par(mar = c(3,4,2,2));           # choice of 4 for more space on left side
-plot(W, ylab="Global Active Power (kilowatts)", type="l", xaxt='n');
+plot(W, ylab="Global Active Power (kilowatts)", xlab="", type="l", xaxt='n');
 axis(1, at = c(1,length(W)/2,length(W)), labels=c("Thu","Fri","Sat"));
     # Note: xaxt='n' first switches standard xlabels off, axis(...) puts Thu,Fri,Sat there
 dev.off(); 
